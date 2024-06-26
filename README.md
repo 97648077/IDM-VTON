@@ -211,7 +211,7 @@ Thanks [Densepose](https://github.com/facebookresearch/DensePose) for human dens
 5.安装配置文件 pip install -r requirements.txt 
 
 在当前文件下新建立一个  requirements.txt  文件然后复制下面内容粘贴
-
+```
 accelerate==0.25.0
 torchmetrics==1.2.1
 tqdm==4.66.1
@@ -229,7 +229,7 @@ pycocotools
 basicsr
 av
 onnxruntime==1.16.2
-
+```
 6.安装pytorch：  pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 –index-url https://download.pytorch.org/whl/cu118  
 
 7.运行   python gradio_demo/app.py
