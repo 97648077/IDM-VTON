@@ -200,7 +200,39 @@ Thanks [Densepose](https://github.com/facebookresearch/DensePose) for human dens
 }
 ```
 
+1.环境配置好电脑上安装python，安装git
 
+2.找一个空白目录克隆  git clone https://github.com/yisol/IDM-VTON.git
+
+3.进入克隆目录创建虚拟环境 python -m env env  
+
+4.激活虚拟环境  env\Scripts\activate
+
+5.安装配置文件 pip install -r requirements.txt 
+
+在当前文件下新建立一个  requirements.txt  文件然后复制下面内容粘贴
+
+accelerate==0.25.0
+torchmetrics==1.2.1
+tqdm==4.66.1
+transformers==4.36.2
+diffusers==0.25.0
+einops==0.7.0
+bitsandbytes==0.39.0
+scipy==1.11.1
+opencv-python
+gradio==4.24.0
+fvcore
+cloudpickle
+omegaconf
+pycocotools
+basicsr
+av
+onnxruntime==1.16.2
+
+6.安装pytorch：  pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 –index-url https://download.pytorch.org/whl/cu118  
+
+7.运行   python gradio_demo/app.py
 
 ## License
 The codes and checkpoints in this repository are under the [CC BY-NC-SA 4.0 license](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode).
